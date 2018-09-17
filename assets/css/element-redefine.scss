@@ -1,0 +1,88 @@
+@import './common.scss';
+// 按钮
+.el-button{
+    padding:9px 15px;
+}
+//pagination
+.el-pagination {
+    padding: 30px 0;
+    text-align: center;
+    .el-pager li{
+        margin-left: 10px;
+        width: 32px;
+        height: 32px;
+        border-radius:4px;
+        line-height: 30px;
+        border:1px solid #e8e8e8 !important;
+        color: #6e6e6e;
+        &.active{
+            background:#f64f38;
+            border: none;
+            color: #fff;
+        }
+    }
+    .btn-next, .btn-prev{
+        border:1px solid #e8e8e8 !important;
+        border-radius:4px;
+        width: 32px;
+        height: 32px;
+    }
+    .btn-next{
+        margin-left: 10px;
+    }
+    button, span{
+        line-height: 30px;
+    }
+    .el-pagination__editor{
+        width: 45px;
+        line-height: 32px;
+        height: 32px;
+        color: #6e6e6e;
+    }
+}
+//面包屑
+.el-breadcrumb{
+    font-size: 14px;
+    padding: 20px 0 10px 0;
+    color:$color-21;
+    padding: 20px 0 10px;
+    .el-breadcrumb__item:last-child .el-breadcrumb__item__inner{
+        // color:#3e3e3e;
+    }    
+}
+.el-checkbox__input.is-checked{
+    .el-checkbox__inner{
+        background-color:$color-main;
+    }
+}
+.el-select-dropdown__list{
+        background-color:#F5F5F5;
+    }
+.el-select-dropdown__item.hover{
+    background-color:$color-hover-bg;
+    color:#ff6800;
+}
+.el-select-dropdown__item.selected.hover{
+    background-color:$color-main;
+    color:#fff;
+}
+.el-select-dropdown__item.selected{
+    background-color:$color-main;
+}
+
+//.el-select-dropdown__item:hover{
+//  background-color:$color-main;
+//  color:#fff;
+//}
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover{
+    background-color:$color-hover-bg;
+}
+.el-breadcrumb__item__inner:hover, .el-breadcrumb__item__inner a:hover{
+    color:$color-main ;
+}
+.el-dialog__headerbtn:focus .el-dialog__close, .el-dialog__headerbtn:hover .el-dialog__close{
+    color:$color-main ;
+} 
+.el-select .el-input__inner:focus{
+    border-color:$color-main ;
+}

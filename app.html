@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]>
+<html class="js ua-ie9" {{ HTML_ATTRS }}>
+<![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html {{ HTML_ATTRS }}>
+<!--<![endif]-->
+    <head>{{ HEAD }}</head>
+    <body {{ BODY_ATTRS }}>
+<!--[if lt IE 10]>
+<script>
+    if(window.location.pathname!=="/update"){
+        window.location.pathname="/update"
+    }
+</script>
+<![endif]-->{{ APP }}
+<script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
+</body>
+</html>
